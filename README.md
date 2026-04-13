@@ -6,7 +6,8 @@ This project is a C# console-based chatbot application developed as part of the 
 ---
 
 ## 2. Functional Requirements
-The system implements the following features:
+The system implements the following features THE FOLLOWING
+
 
 - Console-based user interaction
 - Basic rule-based chatbot response system
