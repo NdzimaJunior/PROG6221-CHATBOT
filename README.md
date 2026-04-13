@@ -57,4 +57,4 @@ A successful build is indicated by a green checkmark in the Actions tab of the r
 ---
 
 ## 7. Author
-This project was developed as part of an academic programming assignment submission.
+This project was developed as part of THE academic programming assignment submission.
