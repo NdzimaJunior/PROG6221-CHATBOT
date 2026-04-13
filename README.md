@@ -33,7 +33,7 @@ The project was developed incrementally and tracked using multiple commits to re
 
 1. Initial project setup and repository configuration  
 2. Implementation of voice greeting functionality  
-3. Addition of ASCII art interface elements  
+3. In Addition of ASCII art interface elements  
 4. Development of chatbot response logic  
 5. Implementation of user input handling and validation  
 6. Code refinement and interface improvements  
