@@ -106,8 +106,7 @@ The `greeting.wav` file must be located in the project root folder. In Visual St
 
 ## ⚙️ GitHub Actions CI
 
-*(Add a screenshot of the green Actions tick here)*
+---<img width="953" height="441" alt="Screenshot 2026-05-22 230138" src="https://github.com/user-attachments/assets/7eb9bc61-7735-4362-b544-3bfffb68d3f0" />
 
----
 
 *By Ndzima Mthembi — PROG6221 Part 2*
