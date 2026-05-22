@@ -1,60 +1,113 @@
-# PROG6221 Chatbot Application
 
-## 1. Project Overview
-This project is a C# console-based chatbot application developed as part of the PROG6221 module requirements. The application simulates a simple interactive chatbot that processes user input and returns predefined responses. Additional functionality includes a voice greeting, ASCII-based interface elements, and basic input validation to improve user experience.
+# 🔐 Cyber Sentinel AI — PROG6221 Part 2
 
----
-
-## 2. Functional Requirements
-The system implements the following features THE FOLLOWING
-
-
-- Console-based user interaction
-- Basic rule-based chatbot response system
-- Audio-based greeting on application startup
-- ASCII art display during program execution
-- Input validation to handle invalid or empty responses
-- Continuous interaction loop until termination command is entered
+> A cybersecurity awareness chatbot built in C# WinForms with keyword recognition, sentiment detection, memory recall, and random responses.
 
 ---
 
-## 3. Technology Stack
-- C# (.NET Console Application)
-- Object-Oriented Programming principles
-- Visual Studio IDE
-- Git for version control
-- GitHub for repository hosting
-- GitHub Actions for Continuous Integration
+## 👤 Student Details
+
+| Field | Details |
+|---|---|
+| **Name** | Ndzima Mthembi |
+| **Module** | PROG6221 — Programming 2A |
+| **Part** | Part 2 — GUI Chatbot |
 
 ---
 
-## 4. Version Control (GitHub Commits)
-The project was developed incrementally and tracked using multiple commits to reflect development stages:
+## 📋 Features Implemented
 
-1. Initial project setup and repository configuration  
-2. Implementation of voice greeting functionality  
-3. In Addition of ASCII art interface elements  
-4. Development of chatbot response logic  
-5. Implementation of user input handling and validation  
-6. Code refinement and interface improvements  
-
----
-
-## 5. Continuous Integration
-Continuous Integration is implemented using GitHub Actions. The workflow automatically builds the application on every push to the main branch to ensure that the project compiles successfully.
-
-A successful build is indicated by a green checkmark in the Actions tab of the repository.
+- ✅ **WinForms GUI** — Dark navy cybersecurity themed interface with ASCII art header
+- ✅ **Voice Greeting** — Plays audio on launch (Part 1 carried over)
+- ✅ **ASCII Art** — Displays in the GUI header on startup
+- ✅ **Keyword Recognition** — 8 cybersecurity keywords recognised:
+  - password, phishing, privacy, malware, scam, wifi, firewall, encryption
+- ✅ **Random Responses** — Each keyword has 4 different responses, randomly selected
+- ✅ **Sentiment Detection** — Detects worried, curious, frustrated, happy moods and responds empathetically
+- ✅ **Memory & Recall** — Remembers user name and favourite topic, uses them in responses
+- ✅ **Conversation Flow** — "tell me more" continues the current topic without resetting
+- ✅ **Fallback Responses** — Handles unrecognised input without crashing
+- ✅ **OOP Structure** — Logic split across 4 classes (no God class)
 
 ---
 
-## 6. How to Run the Application
-1. Clone the repository from GitHub  
-2. Open the solution file in Visual Studio  
-3. Restore dependencies if required  
-4. Build the solution  
-5. Run the application using the start button  
+## 🗂️ Project Structure
+
+```
+PROG6221-CHATBOT/
+├── Chatbot.cs              # Core chatbot logic and ProcessInput() routing
+├── KeywordResponder.cs     # Keyword dictionary with random response lists
+├── SentimentDetector.cs    # Mood detection and empathetic responses
+├── MemoryStore.cs          # Stores user name and favourite topic
+├── User.cs                 # User model (Part 1)
+├── AudioPlayer.cs          # Voice greeting (Part 1)
+├── Form1.cs                # WinForms GUI event handlers
+├── Form1.Designer.cs       # WinForms GUI layout and controls
+├── Program.cs              # App entry point
+├── greeting.wav            # Voice greeting audio file
+└── README.md
+```
 
 ---
 
-## 7. Author
-This project was developed as part of THE academic programming assignment submission.
+## 🚀 How to Run
+
+### Prerequisites
+- Visual Studio 2022
+- .NET 8.0 (or .NET Framework 4.7.2+)
+- Windows OS
+
+### Steps
+1. Clone the repository:
+   ```
+   git clone https://github.com/NdzimaJunior/PROG6221-CHATBOT.git
+   ```
+2. Open `PROG6221-CHATBOT.sln` in Visual Studio 2022
+3. Make sure `greeting.wav` is in the project folder and set to **Copy Always** in properties
+4. Press **F5** or click the green ▶️ button to run
+
+---
+
+## 🔊 Voice Greeting Setup
+
+The `greeting.wav` file must be located in the project root folder. In Visual Studio:
+1. Right-click `greeting.wav` in Solution Explorer
+2. Click **Properties**
+3. Set **Copy to Output Directory** to `Copy always`
+
+---
+
+## 🧪 How to Test Features
+
+| Feature | What to type |
+|---|---|
+| Keyword Recognition | `phishing`, `malware`, `password` |
+| Random Responses | Type `password` multiple times — response changes each time |
+| Sentiment Detection | `I am worried about phishing` |
+| Memory Recall | Enter your name → then ask about a topic → it uses your name |
+| Conversation Flow | Ask about a topic → then type `tell me more` |
+
+---
+
+## 🔗 Links
+
+| Resource | Link |
+|---|---|
+| GitHub Repository | https://github.com/NdzimaJunior/PROG6221-CHATBOT |
+| YouTube Presentation | *(to be added)* |
+
+---
+
+## 📸 Screenshots
+
+*(Add a screenshot of the running GUI here)*
+
+---
+
+## ⚙️ GitHub Actions CI
+
+*(Add a screenshot of the green Actions tick here)*
+
+---
+
+*By Ndzima Mthembi — PROG6221 Part 2*
