@@ -2,7 +2,7 @@ name: .NET Build
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ main ]
 
 jobs:
   build:
@@ -14,10 +14,10 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: '6.0.x'
+        dotnet-version: 8.0.x
 
-    - name: Restore
-      run: dotnet restore
+    - name: Restore dependencies
+      run: dotnet restore POE_CHATBOT/POE_CHATBOT.csproj
 
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build POE_CHATBOT/POE_CHATBOT.csproj --no-restore
