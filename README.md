@@ -100,7 +100,7 @@ The `greeting.wav` file must be located in the project root folder. In Visual St
 
 ## 📸 Screenshots
 
-*(Add a screenshot of the running GUI here)*
+<img width="827" height="550" alt="Screenshot 2026-05-22 222327" src="https://github.com/user-attachments/assets/479f957c-bf75-4b6f-bb14-4006ba79adaf" />
 
 ---
 
