@@ -1,112 +1,34 @@
+# CyberTask - Task Management Assistant
 
-# 🔐 Cyber Sentinel AI — PROG6221 Part 2
-
-> A cybersecurity awareness chatbot built in C# WinForms with keyword recognition, sentiment detection, memory recall, and random responses.
-
----
-
-## 👤 Student Details
-
-| Field | Details |
-|---|---|
-| **Name** | Ndzima Mthembi |
-| **Module** | PROG6221 — Programming 2A |
-| **Part** | Part 2 — GUI Chatbot |
+### Student Details
+* **Student Name:** [NDZIMA]
+* **Student Number:** [ST10486162]
+* **Module:** PROG6221
+* **Lecturer:** Ms. Phewa
 
 ---
 
-## 📋 Features Implemented
+## Project Description
+CyberTask is a comprehensive Windows Forms desktop application developed in C# using the .NET framework. Built across three distinct milestones, the application serves as an advanced task management assistant designed to help users organize, track, and manage their daily tasks through an intuitive graphical user interface (GUI) and a robust data layer.
 
-- ✅ **WinForms GUI** — Dark navy cybersecurity themed interface with ASCII art header
-- ✅ **Voice Greeting** — Plays audio on launch (Part 1 carried over)
-- ✅ **ASCII Art** — Displays in the GUI header on startup
-- ✅ **Keyword Recognition** — 8 cybersecurity keywords recognised:
-  - password, phishing, privacy, malware, scam, wifi, firewall, encryption
-- ✅ **Random Responses** — Each keyword has 4 different responses, randomly selected
-- ✅ **Sentiment Detection** — Detects worried, curious, frustrated, happy moods and responds empathetically
-- ✅ **Memory & Recall** — Remembers user name and favourite topic, uses them in responses
-- ✅ **Conversation Flow** — "tell me more" continues the current topic without resetting
-- ✅ **Fallback Responses** — Handles unrecognised input without crashing
-- ✅ **OOP Structure** — Logic split across 4 classes (no God class)
+* **Part 1 (The Foundation):** Established the core architecture, including the `CyberTask` class, basic object-oriented structures, and version control foundations.
+* **Part 2 (The Interface):** Developed the Windows Forms front-end, implementing UI components for displaying task lists, task details, and status tracking.
+* **Part 3 (The Data Layer & Integration):** Finalized business logic, integrated backend data handling, ensured seamless state management, and optimized repository workflows.
 
 ---
 
-## 🗂️ Project Structure
-
-```
-PROG6221-CHATBOT/
-├── Chatbot.cs              # Core chatbot logic and ProcessInput() routing
-├── KeywordResponder.cs     # Keyword dictionary with random response lists
-├── SentimentDetector.cs    # Mood detection and empathetic responses
-├── MemoryStore.cs          # Stores user name and favourite topic
-├── User.cs                 # User model (Part 1)
-├── AudioPlayer.cs          # Voice greeting (Part 1)
-├── Form1.cs                # WinForms GUI event handlers
-├── Form1.Designer.cs       # WinForms GUI layout and controls
-├── Program.cs              # App entry point
-├── greeting.wav            # Voice greeting audio file
-└── README.md
-```
+## Features
+* **Task Overview Dashboard:** View all current tasks in a clean, structured list.
+* **Task Detail View:** Click on any task to see its full breakdown, deadlines, and priorities.
+* **Progress Tracking:** Dynamic status updates for tasks (e.g., Pending, In Progress, Completed).
+* **System Vision Benchmark:** Built and presented in alignment with strict system design principles.
 
 ---
 
-## 🚀 How to Run
-
-### Prerequisites
-- Visual Studio 2022
-- .NET 8.0 (or .NET Framework 4.7.2+)
-- Windows OS
-
-### Steps
-1. Clone the repository:
-   ```
-   git clone https://github.com/NdzimaJunior/PROG6221-CHATBOT.git
-   ```
-2. Open `PROG6221-CHATBOT.sln` in Visual Studio 2022
-3. Make sure `greeting.wav` is in the project folder and set to **Copy Always** in properties
-4. Press **F5** or click the green ▶️ button to run
-
----
-
-## 🔊 Voice Greeting Setup
-
-The `greeting.wav` file must be located in the project root folder. In Visual Studio:
-1. Right-click `greeting.wav` in Solution Explorer
-2. Click **Properties**
-3. Set **Copy to Output Directory** to `Copy always`
-
----
-
-## 🧪 How to Test Features
-
-| Feature | What to type |
-|---|---|
-| Keyword Recognition | `phishing`, `malware`, `password` |
-| Random Responses | Type `password` multiple times — response changes each time |
-| Sentiment Detection | `I am worried about phishing` |
-| Memory Recall | Enter your name → then ask about a topic → it uses your name |
-| Conversation Flow | Ask about a topic → then type `tell me more` |
-
----
-
-## 🔗 Links
-
-| Resource | Link |
-|---|---|
-| GitHub Repository | https://github.com/NdzimaJunior/PROG6221-CHATBOT |
-| YouTube Presentation | *(to be added)* |
-
----
-
-## 📸 Screenshots
-
-<img width="827" height="550" alt="Screenshot 2026-05-22 222327" src="https://github.com/user-attachments/assets/479f957c-bf75-4b6f-bb14-4006ba79adaf" />
-
----
-
-## ⚙️ GitHub Actions CI
-
----<img width="953" height="441" alt="Screenshot 2026-05-22 230138" src="https://github.com/user-attachments/assets/7eb9bc61-7735-4362-b544-3bfffb68d3f0" />
+## Prerequisites & Requirements
+To run this project locally, you will need:
+* **Operating System:** Windows 10 or 11
+* **IDE:** Visual Studio 2022 (or newer) with the **.NET Desktop Development** workload installed.
+* **Framework:** .NET Framework 4.8 / .NET 6.0+ (depending on your specific project target).
 
 
-*By Ndzima Mthembi — PROG6221 Part 2*
